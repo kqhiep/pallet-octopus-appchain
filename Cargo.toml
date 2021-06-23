@@ -9,7 +9,9 @@ repository = "https://github.com/octopus-network/pallet-octopus-appchain.git"
 description = "FRAME pallet for joining the octopus network as an appchain."
 readme = "README.md"
 documentation = "https://docs.rs/pallet-octopus-appchain"
-
+[dependencies]
+pallet-session = { default-features = false, version = '3.0.0' }
+pallet-octopus-appchain = { default-features = false, git = 'https://github.com/octopus-network/pallet-octopus-appchain.git' }
 [package.metadata.docs.rs]
 targets = ["x86_64-unknown-linux-gnu"]
 
